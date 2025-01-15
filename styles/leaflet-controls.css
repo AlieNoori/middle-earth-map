@@ -1,0 +1,56 @@
+/* Control container */
+.leaflet-control-layers {
+  @apply rounded-lg border-0 bg-white p-0 font-Lora shadow-lg;
+}
+
+/* Control form wrapper */
+.leaflet-control-layers-list {
+  @apply p-0;
+}
+
+/* Expanded state */
+.leaflet-control-layers-expanded {
+  @apply bg-background bg-opacity-95 px-3 py-2;
+}
+
+/* Section titles */
+.leaflet-control-layers-base,
+.leaflet-control-layers-overlays {
+  @apply min-w-32;
+}
+
+/* Individual layer items */
+.leaflet-control-layers label {
+  @apply m-0 flex cursor-pointer items-center gap-4 rounded px-1 py-1.5 text-xl font-light;
+}
+
+/* Checkboxes and radio buttons */
+.leaflet-control-layers input[type="checkbox"],
+.leaflet-control-layers input[type="radio"] {
+  @apply h-4 w-4 rounded border-gray-300 text-blue-600 focus:ring-blue-500;
+}
+
+/* Separator between base layers and overlays */
+.leaflet-control-layers-separator {
+  @apply my-2 border-t border-gray-200;
+}
+
+/* Control toggle button */
+.leaflet-control-layers-toggle {
+  @apply flex h-8 w-8 items-center justify-center rounded-lg border border-gray-200 bg-white shadow-md;
+  /* background-image: none !important; /* Remove default icon */
+}
+
+/* Custom icon for the toggle button using SVG */
+/*
+.leaflet-control-layers-toggle:before {
+  content: "";
+  @apply h-4 w-4 bg-contain bg-center bg-no-repeat;
+  background-image: url("");
+}
+*/
+
+#paths .leaflet-control-layers-list:before {
+  content: "Paths";
+  @apply block border-b border-gray-200 px-3 py-2 text-xl font-bold text-black;
+}
